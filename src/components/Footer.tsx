@@ -1,4 +1,4 @@
-import { Smartphone, Mail, MapPin, Users } from "lucide-react";
+import { Smartphone, Mail, MapPin } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -58,7 +58,7 @@ export const Footer = () => {
             <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2 text-background/70">
                 <Mail className="w-4 h-4" />
-                <span>hello@theeruvutaste.com</span>
+                <span>soorajp2002@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2 text-background/70">
                 <MapPin className="w-4 h-4" />

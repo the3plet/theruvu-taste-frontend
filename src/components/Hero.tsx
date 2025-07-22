@@ -15,14 +15,13 @@ export const Hero = () => {
               </div>
               
               <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
-                New in the City?
-                <span className="text-primary block">Find Your Food</span>
-                Community
+                Find Amazing
+                <span className="text-primary block">Street Food</span>
+                 Near You
               </h1>
               
               <p className="text-xl text-muted-foreground max-w-lg">
-                No friends to guide you? Limited budget? We help relocated students and employees discover 
-                authentic local food spots that locals trust — without the expensive delivery app markup.
+                Discover budget-friendly, tasty food spots in your area that don't appear on delivery apps. Perfect for students, newcomers, and anyone on a tight budget.
               </p>
             </div>
 
