@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Smartphone } from "lucide-react";
+import icon from '@/assets/icon.png'
 
 export const Header = () => {
   return (
@@ -8,7 +8,8 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-primary rounded-xl flex items-center justify-center">
-              <Smartphone className="w-5 h-5 text-primary-foreground" />
+              {/* <Smartphone className="w-5 h-5 text-primary-foreground" /> */}
+              <img src={icon} className="rounded-xl" alt="logo"/>
             </div>
             <span className="text-xl font-bold text-foreground">Theruvu Taste</span>
           </div>
@@ -25,9 +26,12 @@ export const Header = () => {
             </a>
           </nav>
 
+            <a href="#waitinglist">
           <Button variant="waitlist" size="sm">
+
             Join Waitlist
           </Button>
+            </a>
         </div>
       </div>
     </header>

@@ -23,7 +23,7 @@ export const WaitlistSection = () => {
   };
 
   return (
-    <section className="py-16 px-6 bg-gradient-to-r from-primary to-primary-light">
+    <section className="py-16 px-6 bg-gradient-to-r from-primary to-primary-light" id="waitinglist">
       <div className="container mx-auto text-center">
         <div className="max-w-3xl mx-auto animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-6">
@@ -43,23 +43,25 @@ export const WaitlistSection = () => {
                 placeholder="Enter your email address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 h-14 rounded-2xl border-primary-foreground/20 bg-primary-foreground/10 text-primary-foreground placeholder:text-primary-foreground/60 focus:border-primary-foreground/40 focus:scale-105 transition-transform duration-200"
+                className="flex-1 h-10  border-primary-foreground/20 bg-primary-foreground/10 text-primary-foreground placeholder:text-primary-foreground/60 focus:border-primary-foreground/40 focus:scale-105 transition-transform duration-200"
                 required
               />
               <Button 
                 type="submit" 
                 variant="waitlist" 
                 size="lg"
-                className="bg-background text-primary hover:bg-background/90 whitespace-nowrap hover:scale-105 transition-all duration-300 group"
+                className="md:h-10 bg-background text-primary hover:bg-background/90 whitespace-nowrap hover:scale-105 transition-all duration-300 group "
               >
                 Join Waitlist
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
               </Button>
             </form>
           ) : (
-            <div className="flex items-center justify-center space-x-3 text-primary-foreground">
+            <div className="flex items-center justify-center space-x-3 text-primary-foreground ">
+              <div className="border p-2 rounded-lg border-orange-300 flex gap-1">
               <CheckCircle className="w-8 h-8" />
               <span className="text-xl font-medium">You're on the list! We'll be in touch soon.</span>
+                </div>
             </div>
           )}
 

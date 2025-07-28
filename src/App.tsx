@@ -8,7 +8,7 @@ import { Toaster } from "./components/ui/sonner";
 function App() {
   return (
     <TooltipProvider>
-      <Toaster />
+      <Toaster richColors  />
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="*" element={<NotFound />} />

@@ -3,34 +3,40 @@ import { MapPin, Users, DollarSign, Clock, Star, Shield } from "lucide-react";
 const features = [
   {
     icon: MapPin,
-    title: "No Friends? No Problem",
-    description: "Skip weeks of trial and error. Find authentic local spots trusted by people who understand tight budgets."
+    title: "Discover Nearby Gems",
+    description:
+      "Skip weeks of trial and error. Find authentic local spots trusted by people who understand tight budgets.",
   },
   {
     icon: DollarSign,
-    title: "Student & Employee Budgets",
-    description: "Every spot is verified by fellow newcomers who know what it's like to count every rupee."
+    title: "Budget-Friendly Options",
+    description:
+      "Every spot is verified by fellow newcomers who know what it's like to count every rupee.",
   },
   {
     icon: Users,
     title: "Fellow Relocators",
-    description: "Reviews from students and employees who've been in your shoes — honest, budget-conscious, and helpful."
+    description:
+      "Reviews from students and employees who've been in your shoes — honest, budget-conscious, and helpful.",
   },
   {
     icon: Clock,
     title: "Real-Time Updates",
-    description: "Know before you walk. Check if your chosen spot is open and serving, so you don't waste time or money."
+    description:
+      "Know before you walk. Check if your chosen spot is open and serving.",
   },
   {
     icon: Star,
     title: "Authenticity Over Marketing",
-    description: "No fancy ads, just real food from small vendors who care about taste and value, not profit margins."
+    description:
+      "No fancy ads, just real food from small vendors who care about taste and value.",
   },
   {
     icon: Shield,
-    title: "Made by Newcomers",
-    description: "Built by people who understand the loneliness and budget constraints of starting fresh in a new city."
-  }
+    title: "Trusted Platform",
+    description:
+      "Safe, reliable recommendations from a community that understands your needs.",
+  },
 ];
 
 export const Features = () => {
@@ -42,16 +48,17 @@ export const Features = () => {
             Built for City Newcomers
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            No local friends? Tight budget? We get it. Designed specifically for students and employees 
-            who've moved to new cities and need authentic, affordable food recommendations they can trust.
+            We understand the struggle of finding good, affordable food in a new
+            city. Our platform connects you with local food gems that care about
+            quality and value.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div 
-              key={index} 
-              className="bg-card rounded-3xl p-8 border border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:scale-105 group animate-fade-in" 
+            <div
+              key={index}
+              className="bg-card rounded-3xl p-8 border border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:scale-105 group animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-center justify-center w-16 h-16 bg-primary/10 rounded-2xl mb-6 group-hover:bg-primary/20 transition-colors duration-300">

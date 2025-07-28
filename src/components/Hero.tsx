@@ -26,10 +26,13 @@ export const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="group">
+                <a href="#waitinglist">
+              <Button variant="hero" size="lg" className="group w-full">
+
                 Join Waitlist
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
+                </a>
               <Button variant="outline" size="lg">
                 Learn More
               </Button>
